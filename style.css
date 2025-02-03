@@ -1,0 +1,44 @@
+
+/* fonts */
+.h-1{
+
+}
+.h-2{
+
+}
+.h-3{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.h-4{
+
+}
+.h-5{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.h-6{
+
+}
+
+/* header */
+.reverse{
+    flex-direction: row-reverse;
+}
+.search-header{
+    background-color: black;
+    color: white;
+}
+.sticky{
+    position: sticky;
+}
+
+/* main */
+
+.photo-blog{
+  height: 600px;
+  width: auto;
+  overflow: hidden;
+}

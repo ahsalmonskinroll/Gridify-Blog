@@ -17,6 +17,7 @@
     integrity="sha384-HoA8U7Ibk2vRH5M8VRPj+DjDfiWl3jNLo5T7vjwA5UdoVpBVLC/uj0jmG6fVJAg7"
     crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="container-fluid p-0 sticky">
@@ -45,12 +46,23 @@
                         <div class="h-3">Turning Heads</div>
                     </div>
                     <div class="col-6 text-end">
-                        <div class="row row-cols-auto reverse gap-3">
+                        <button class="btn custom-btn d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                            ☰
+                        </button>
+                        <div class="collapse d-md-block" id="navbarMenu">
+                            <div class="row row-cols-auto reverse gap-3">
+                                <div class="col h-5">Contact</div>
+                                <div class="col h-5">About</div>
+                                <div class="col h-5">My Blog</div>
+                                <div class="col h-5">Home</div>
+                            </div>
+                        </div>
+                        <!-- <div class="row row-cols-auto reverse gap-3">
                             <div class="col h-5">Contact</div>
                             <div class="col h-5">About</div>
                             <div class="col h-5">My Blog</div>
                             <div class="col h-5">Home</div>
-                        </div>
+                        </div> -->
                     </div> 
                 </div> 
             </div>
@@ -58,15 +70,14 @@
     </header>
     <main class="container-fluid p-0 m6">
         <section>
-            <div class="row">
-                <div class="col-4 g-2 photo-blog">
+            <div class="row justify-content-center">
+                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog except">
                     <img class="img" src="images/img1.jpg" alt="img1">
                 </div>
-                <div class="col-4 g-2 photo-blog">
+                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog">
                     <img class="img" src="images/img2.jpg" alt="img2">
-                    <div class="text-overlay">Bu bir alt yazıdır.</div>
                 </div>
-                <div class="col-4 g-2 photo-blog">
+                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog except">
                     <img class="img" src="images/img3.jpg" alt="img3">
                 </div>
             </div>
@@ -83,8 +94,9 @@
 
         <section class="content m7">
             <div class="container">
+                <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-sm-12 col-md-7">
                         <div class="row d-flex justify-content-center">
                             <div class="col-9"> <!--burası sol kısmın hizası-->
                                 <section class="border1"> <!--burası kartlar, birini hazırla ve çoğalt-->
@@ -150,11 +162,11 @@
                             </div>        
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-sm-12 col-md-5">
                             <div class="aside">
-                                <section class="p-5">
+                                <section>
                                     <div class="aside-card">
-                                        <div class="p-5 m-5">
+                                        <div class=" m-5">
                                             <div class="h-2 text-center">Let the posts come to you.</div>
                                             <div class="h-6 text-center mt-5">form gelecek</div>
                                             

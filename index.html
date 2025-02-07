@@ -13,179 +13,176 @@
       crossorigin="anonymous"
     />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HoA8U7Ibk2vRH5M8VRPj+DjDfiWl3jNLo5T7vjwA5UdoVpBVLC/uj0jmG6fVJAg7"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HoA8U7Ibk2vRH5M8VRPj+DjDfiWl3jNLo5T7vjwA5UdoVpBVLC/uj0jmG6fVJAg7"
+      crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
   </head>
   <body>
     <header class="container-fluid p-0 sticky">
-        <section class="search-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="h-5">Search gelecek</div>
-                    </div>
-                    <div class="col-6 text-end">
-                        <!-- ikonlar gelecek -->
-                        <div class="row row-cols-auto reverse gap-2">
-                            <div class="col h-5">a</div>
-                            <div class="col h-5">a</div>
-                            <div class="col h-5">a</div>
-                            <div class="col h-5">a</div>
-                        </div>
-                    </div>
-                </div>
+      <div class="div-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="h-5">Search gelecek</div>
             </div>
-        </section>
-        <section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <div class="h-3">Turning Heads</div>
-                    </div>
-                    <div class="col-6 text-end">
-                        <button class="btn custom-btn d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                            ☰
-                        </button>
-                        <div class="collapse d-md-block" id="navbarMenu">
-                            <div class="row row-cols-auto reverse gap-3">
-                                <div class="col h-5">Contact</div>
-                                <div class="col h-5">About</div>
-                                <div class="col h-5">My Blog</div>
-                                <div class="col h-5">Home</div>
-                            </div>
-                        </div>
-                        <!-- <div class="row row-cols-auto reverse gap-3">
+            <div class="col-6 text-end">
+              <!-- ikonlar gelecek -->
+              <div class="row row-cols-auto reverse gap-2">
+                <div class="col h-5">a</div>
+                <div class="col h-5">a</div>
+                <div class="col h-5">a</div>
+                <div class="col h-5">a</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="h-3 py-3">Turning Heads</div>
+            </div>
+            <div class="col-6 text-end">
+              <button
+                class="btn custom-btn d-md-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+              >
+                ☰
+              </button>
+              <div class="collapse d-md-block" id="navbarMenu">
+                <div class="row row-cols-auto reverse gap-3">
+                  <div class="col h-5">Contact</div>
+                  <div class="col h-5">About</div>
+                  <div class="col h-5">My Blog</div>
+                  <div class="col h-5">Home</div>
+                </div>
+              </div>
+              <!-- <div class="row row-cols-auto reverse gap-3">
                             <div class="col h-5">Contact</div>
                             <div class="col h-5">About</div>
                             <div class="col h-5">My Blog</div>
                             <div class="col h-5">Home</div>
                         </div> -->
-                    </div> 
-                </div> 
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="container-fluid p-0 m6">
-        <section>
-            <div class="row justify-content-center">
-                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog except">
-                    <img class="img" src="images/img1.jpg" alt="img1">
-                </div>
-                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog">
-                    <img class="img" src="images/img2.jpg" alt="img2">
-                </div>
-                <div class="col-sm col-md-6 col-lg-4 g-2 photo-blog except">
-                    <img class="img" src="images/img3.jpg" alt="img3">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row row-cols-auto motto">
-                    <div class="col h-1 border-motto">
-                        My Life. My Blog.
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col except1">
+            <img class="img-fluid" src="images/img8.jpg" alt="img1" />
+          </div>
+          <div class="col text-center">
+            <img class="img-fluid" src="images/img6.jpg" alt="img2" />
+          </div>
+          <div class="col except2">
+            <img class="img-fluid" src="images/img7.jpg" alt="img3" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row row-cols-auto justify-content-center">
+            <div class="col h-1 border-motto">My Life. My Blog.</div>
+          </div>
+        </div>
+      </section>
 
-        <section class="content m7">
-            <div class="container">
-                <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-                <div class="row">
-                    <div class="col-sm-12 col-md-7">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-9"> <!--burası sol kısmın hizası-->
-                                <section class="border1"> <!--burası kartlar, birini hazırla ve çoğalt-->
-                                    <div class="row">
-                                        <div class="col cards-photo">
-                                            <img class="imgs" src="images/article1.jpg" alt="article1">
-                                        <div class="col">
-                                            <section class="m-4">
-                                                <div class="date-text h-7">
-                                                    <div>Mar 22, 2023</div>
-                                                    <div class="p-2">.</div>
-                                                    <div>2 min read</div>
-                                                </div>
-                                                
-                                                <div class="h-4 mt-3">Transform your winter blues into winter creativity</div>
-                                                <div class="h-6 mt-3">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to</div>
-                                            </section>
-                                            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                <section class="border1 mt-5">
-                                    <div class="row">
-                                        <div class="col cards-photo">
-                                            <img class="imgs" src="images/article2.jpg" alt="article1">
-                                        <div class="col">
-                                            <section class="m-4">
-                                                <div class="date-text h-7">
-                                                    <div>Mar 22, 2023</div>
-                                                    <div class="p-2">.</div>
-                                                    <div>2 min read</div>
-                                                </div>
-                                                
-                                                <div class="h-4 mt-3">Transform your winter blues into winter creativity</div>
-                                                <div class="h-6 mt-3">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to</div>
-                                            </section>
-                                            
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                <section class="border1 mt-5">
-                                    <div class="row">
-                                        <div class="col cards-photo">
-                                            <img class="imgs" src="images/article3.jpg" alt="article1">
-                                        <div class="col">
-                                            <section class="m-4">
-                                                <div class="date-text h-7">
-                                                    <div>Mar 22, 2023</div>
-                                                    <div class="p-2">.</div>
-                                                    <div>2 min read</div>
-                                                </div>
-                                                
-                                                <div class="h-4 mt-3">Transform your winter blues into winter creativity</div>
-                                                <div class="h-6 mt-3">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to</div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </section>
-                                <button class="my-5" type="button">Click Me!</button>
-                            </div>        
+      <section class="content m7 line-height">
+        <div class="container">
+          <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+          <div class="row">
+
+            <div class="col-sm-12 col-md-7">
+              <div class="container">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row">
+                    <div class="col-md-5 photo-col">
+                      <img
+                        class="imgs"
+                        src="images/article4.jpg"
+                        alt="article1"
+                      />
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <div class="date-text h-7 my-3">
+                          <div>Mar 22, 2023</div>
+                          <div class="minute">2 min read</div>
                         </div>
+                        <div class="h-4 mt-3">
+                          Transform your winter blues into winter creativity
+                        </div>
+                        <div class="h-6 mt-3">
+                          Create a blog post subtitle that summarizes your post
+                          in a few short, punchy sentences and entices your
+                          audience to
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-12 col-md-5">
-                            <div class="aside">
-                                <section>
-                                    <div class="aside-card">
-                                        <div class=" m-5">
-                                            <div class="h-2 text-center">Let the posts come to you.</div>
-                                            <div class="h-6 text-center mt-5">form gelecek</div>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </section>
-
-                                
-                            </div>
-                            <div class="col-3"></div>
-                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="container">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row">
+                    <div class="col-md-5 photo-col">
+                      <img
+                        class="imgs"
+                        src="images/article5.jpg"
+                        alt="article1"
+                      />
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <div class="date-text h-7 my-3">
+                          <div>Mar 22, 2023</div>
+                          <div class="minute">2 min read</div>
+                        </div>
+                        <div class="h-4 mt-3">
+                          Transform your winter blues into winter creativity
+                        </div>
+                        <div class="h-6 mt-3">
+                          Create a blog post subtitle that summarizes your post
+                          in a few short, punchy sentences and entices your
+                          audience to
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="my-5" type="button">Click Me!</button>
+              </div>
+
             </div>
-        </section>
+
+            <div class="col-sm-12 col-md-5">
+              <div class="aside">
+                <section>
+                  <div class="aside-card">
+                    <div class="h-2 text-center">
+                      Let the posts come to you.
+                    </div>
+                    <div class="h-6 text-center mt-5">form gelecek</div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="text-center p-4 footer-back">
-        <div>2025</div>
+      <div>2025</div>
     </footer>
-</body>
+  </body>
 </html>

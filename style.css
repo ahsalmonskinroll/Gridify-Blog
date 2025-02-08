@@ -49,6 +49,11 @@ body {
     line-height: normal;
 }
 
+/* colors */
+.light-yellow{
+    background-color: rgb(255, 247, 232);
+}
+
 /* header */
 
 @property --startColor {
@@ -97,21 +102,84 @@ body {
     border: 1px solid #530707 !important;
     border-radius: 8px;
 }
+/* 
+.search-input{
+    background: none;
+    border: none;
+    color: white;
+    width: 15vw;
+} */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    width: 40px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 0;
+    font-size: 16px;
+    transition: width 0.3s ease;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-btn i {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Butona tıklanınca genişleme efekti */
+.search-container:focus-within {
+    width: 200px;
+}
+
+.search-container:focus-within .search-input {
+    width: 160px;
+}
+
+
+.social-icons a {
+    color: white;
+    font-size: 17px;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-icon{
+    width: 20px;
+}
+
+.align-icons{
+    display: grid;
+    align-items: center;
+}
 
 /* main */
 #scrollTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
     background-color: rgb(253, 221, 162);
     color: black;
     border: none;
+    border-radius: 9px 9px 0px 0px;
     font-size: 24px;
     cursor: pointer;
     display: none; /* Başlangıçta gizli */
     transition: opacity 0.3s, visibility 0.3s;
+    z-index: 3;
 }
 
 #scrollTopBtn:hover {
@@ -123,7 +191,11 @@ body {
 }
 
 .m7 {
-    margin-top: 200px;
+    margin-top: 150px;
+}
+
+.img-container{
+    position: relative;
 }
 
 .div-bottom{
@@ -151,7 +223,12 @@ body {
 .border-motto {
     background: linear-gradient(to right, var(--startColor), var(--endColor));
     animation: gradient 5s linear infinite;
-    display: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* cards */
@@ -177,6 +254,7 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    
 }
 
 .minute{
@@ -191,9 +269,11 @@ button {
 
 
 /* aside */
+
 .aside {
-    background-color: rgb(255, 247, 232);
     height: 100%;
+    border-radius: 4px;
+    place-items: center;
 }
 
 .date-text {
@@ -207,7 +287,71 @@ button {
     background-color: rgb(253, 221, 162);
 }
 
+.aside-place-center{
+    display: grid;
+    place-items: center;
+}
 
+.aside-place-start{
+    display: grid;
+    justify-content: start;
+
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 20px 50px 20px 20px; */
+}
+
+.email-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    transition: border-bottom 0.3s ease;
+}
+
+.email-input::placeholder {
+    color: transparent;
+}
+
+.email-container:hover .email-input {
+    border-bottom: 2px solid black;
+}
+
+.h2-text{
+    width: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.subscribe-btn{
+    border-radius: 9px 9px 0px 0px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.click-btn{
+    border-radius: 9px 9px 0px 0px;
+}
+
+
+.form-check{
+    display: grid;
+    place-content: start;
+}
+
+.form-check-input:checked {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
 
 /* footer */
 .footer-back {
@@ -220,13 +364,10 @@ button {
 
 @media (max-width: 768px) {
     
-    .border-motto {
-        bottom: 40px;
-    }
 
-    .h-1 {
+    /* .h-1 {
         font-size: 30px;
-    }
+    } */
 
     .except2{
         display: none;
@@ -246,6 +387,9 @@ button {
 @media (max-width: 576px) {
     .except1{
         display: none;
+    }
+    .h-1 {
+        font-size: 26px;
     }
 }
 

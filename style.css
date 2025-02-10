@@ -311,6 +311,7 @@ button {
     font-size: 16px;
     color: black;
     transition: border-bottom 0.3s ease;
+    width: 100%;
 }
 
 .email-input::placeholder {
@@ -347,12 +348,17 @@ button {
 .form-check{
     display: grid;
     place-content: start;
+
+}
+.form-check-input{
+    transition: 0.5s !important;
 }
 
 .form-check-input:checked {
     background-color: #530707 !important;
     border-color: #530707 !important;
 }
+
 
 .img-wrapper {
     width: 100%;
@@ -373,6 +379,11 @@ button {
     height: 100%;
     object-fit: cover; 
   }
+
+  /* .aside-sm-row {
+    display: flex;
+    flex-wrap: wrap;
+  } */
 
 /* footer */
 footer .container {
@@ -415,5 +426,8 @@ footer .container {
 @media (max-width: 300px) {
     .h-1 {
         font-size: 20px;
+    }
+    .aside-sm-row{
+        width: 220px;
     }
 }

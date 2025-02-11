@@ -62,7 +62,21 @@ body {
     background-color: #c74e51;
 }
 
+.pink{
+    background-color: #ea9dae;
+}
+
+.royal-orange{
+    background-color: #f99256
+}
+.white{
+    background-color: white;
+}
 /* header */
+
+.pointer{
+    cursor: pointer;
+}
 
 @property --startColor {
     syntax: "<color>";
@@ -99,15 +113,20 @@ body {
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
-    display: contents;
+    /* display: contents; */
 }
 
 .custom-btn{
     border: 1px solid #c74e51 !important;
-    /* border-radius: 8px; */
+}
+.padding-button{
+    padding: 12px 12px;
+}
+.collapses{
+    transition: 0.3s all ease-in !important;
 }
 
 .search-container {
@@ -127,6 +146,7 @@ body {
     width: 0;
     font-size: 16px;
     transition: width 0.3s ease;
+    padding: 0;
 }
 
 .search-btn {
@@ -148,6 +168,7 @@ body {
 
 .search-container:focus-within .search-input {
     width: 160px;
+    padding-left: 5px !important;
 }
 
 
@@ -166,6 +187,34 @@ body {
     align-items: center;
 }
 
+/* .bubble-text{
+    font-size: clamp(2rem, calc(2rem + 3.5vw), 8rem);
+    color: hsl(0, 0%, 50%);
+    user-select: none;
+
+    & .split-char{
+        font-weight: 200;
+        transition: font-weight 0.5s ease;
+    }
+
+    &:hover{
+        font-weight: var(--_fw-900);
+        color: var(--_clr-900);
+    }
+
+    &:has(+ .split-char:hover){
+        font-weight: var(--_fw-700);
+        color: var(--_clr-700);
+    }
+    &:has(+ .split-char + .split-char:hover){
+        font-weight: var(--_fw-400);
+        color: var(--_clr-400);
+    }
+    &:hover + .split-char{
+        font-weight: var(--_fw-700);
+        color:var(--_clr-400);
+    }
+} */
 
 /* main */
 /* .menu-margin{
@@ -212,6 +261,7 @@ body {
 
 .div-bottom{
     display: flex;
+    
 }
 
 .deneme2{
@@ -263,12 +313,11 @@ button {
 }
 
 .photo-col {
-    display: flex;         /* Flexbox kullanarak içeriği hizala */
-    justify-content: center; /* İçeriği yatayda ortala */
-    align-items: center;    /* İçeriği dikeyde ortala (isteğe bağlı) */
+    display: flex;         
+    justify-content: center; 
+    align-items: center;    
+
 }
-
-
 /* aside */
 
 .aside {
@@ -351,7 +400,7 @@ button {
 
 }
 .form-check-input{
-    transition: 0.5s !important;
+    transition: 0.3s !important;
 }
 
 .form-check-input:checked {
@@ -371,7 +420,7 @@ button {
     transition: 1s all;
   }
   .img-wrapper:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   
   .img-wrapper img {
@@ -408,8 +457,14 @@ footer .container {
     }
     .imgs{
         object-fit: cover;
-        width: 44vw;
+        width: 100%;
         border-radius: 0px;
+        height: 40vh;
+        object-position: center;
+    }
+    .img-wrapper {
+        width: 100%;
+        height: 50vh;
     }
 }
 
